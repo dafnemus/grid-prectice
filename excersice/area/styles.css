@@ -6,12 +6,11 @@
 .container {
   display: grid;
   grid-template-areas:
-    "header header header header"
-    "aside main main main"
-    "aside section section section"
-    "footer footer footer footer";
-  text-align: center;
-  width: 100%;
+    "header header header header header"
+    "aside main main main main"
+    "aside section section section section"
+    "footer footer footer footer footer";
+  grid-template-columns: repeat(5, 1fr);
   height: 100vh;
   grid-template-rows: 1fr 2fr 1fr 1fr;
   gap: 15px 10px;
@@ -46,7 +45,6 @@
 .main,
 .section,
 .footer {
-  padding: 30px 0;
   display: flex;
   justify-content: center;
   align-items: center;
